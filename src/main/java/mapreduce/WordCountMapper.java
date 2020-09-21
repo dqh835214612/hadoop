@@ -39,7 +39,6 @@ public class WordCountMapper extends Mapper<LongWritable, Text,Text,LongWritable
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        super.map(key, value, context);
         Text text = new Text();
         LongWritable longWritable = new LongWritable();
         //1:将一行的文本数据进行拆分
